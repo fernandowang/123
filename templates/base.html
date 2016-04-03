@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fernando Wang | UX Designer- {{title}}</title>
+		<link rel="stylesheet" type="text/css" href="../static/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/bootstrap.min.css">
+
+</head>
+<body>
+	<header>
+		<div class="container-fluid">
+      		<div>
+        		<div class='navbar-header'>
+         	<!-- 	<a href="index"> -->
+          		<img class='logo' src="../static/img/logo.jpg" alt="logo">
+          		<!-- <div class='headtitle'> -->
+            		<h1> Fernando Wang | UX Designer</h1>
+
+            </div>
+            		
+          	<!-- </div></a> -->
+        </div>
+
+
+	
+		
+		<nav>
+			<div class="navbar">
+				<ul>
+					<!-- <p><h1>Fernando Wang | UX Designer</h1></p> -->
+
+					<li>{% if path == "/index.html" %}
+						<a href = "index.html">HOME</a>
+					{% else %}
+						<a href = "index.html">Home</a>
+					{% endif %}</li>
+					<li>{% if path == "/projects.html" %}
+						<a href = "projects.html">PROJECTS</a>
+					{% else %}
+						<a href = "projects.html">Projects</a>
+					{% endif %}</li>
+					<li>{% if path == "/resume.html" %}
+						<a href = "resume.html">RESUME</a>
+					{% else %}
+						<a href = "resume.html">Resume</a>
+					{% endif %}</li>
+					<li>{% if path == "/contactme.html" %}
+						<a href = "contactme.html">CONTACT ME</a>
+					{% else %}
+						<a href= "contactme.html">Contact Me</a>
+					{% endif %}</li>
+
+				</ul>
+			</div>
+
+		</nav>
+
+
+	</header>
+	
+	{% block content %}
+	
+
+	{% endblock %}
+	
+    <footer>
+
+     <ul class="footerlink">
+       <li><a href="https://www.linkedin.com/in/fernando-wang-5412b67a?trk=hp-identity-name"><img class="footerimg" src="../static/img/linkedin.jpg" alt="linkedin jpg"> Linkedin</a></li>
+       <li><a href="https://www.facebook.com/fernandno.wang"><img src="../static/img/facebook.jpeg" alt="facebook icon" class="footerimg"> Facebook</a></li>
+       <li><a href="https://mcommunity.umich.edu/#search:fernando%20wang"><img src="../static/img/umich.jpg" alt="MComuunity icon" class="footerimg">MCommunity</a></li>
+
+     </ul>
+
+     <p>Copyright &copy; Fernando Wang, All rights reserved.</p>
+
+   </footer>
+	
+</body>
+</html>

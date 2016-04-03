@@ -1,0 +1,106 @@
+
+{%extends "templates/base.html" %}
+
+
+
+{% block content %}
+
+  <div class="gallery">
+    <div class="preview">
+      <img class="previewimg" id="preview" src="../static/img/gallery/gall1.jpg" alt=""/>
+    </div>
+    <div class="thumbnail">
+      <img class="thumbnailimg" id="img1" src="../static/img/gallery/gall1.jpg" alt="gallery1"/>
+      <img class="thumbnailimg" id="img2" src="../static/img/gallery/gall2.jpg" alt="gallery2"/>
+      <img class="thumbnailimg" id="img3" src="../static/img/gallery/gall3.jpg" alt="gallery3"/>
+      <img class="thumbnailimg" id="img4" src="../static/img/gallery/gall4.jpg" alt="gallery4"/>
+      <img class="thumbnailimg" id="img5" src="../static/img/gallery/gall5.jpg" alt="gallery5"/>
+      <img class="thumbnailimg" id="img6" src="../static/img/gallery/gall6.jpg" alt="gallery6"/>
+      <img class="thumbnailimg" id="img7" src="../static/img/gallery/gall7.jpg" alt="gallery7"/>
+      <img class="thumbnailimg" id="img8" src="../static/img/gallery/gall8.jpg" alt="gallery8"/>
+      <img class="thumbnailimg" id="img9" src="../static/img/gallery/gall9.jpg" alt="gallery9"/>
+    </div>
+    <br>
+  </div>
+
+
+<!--   <div class='jumbotron'>
+    <div class="container">
+      <div class="row">
+    <div class='blogtext'>
+      <p class='bloghdl col-md-2 col-lg-3'>First Note</p>
+      <div class="col-md-9 col-lg-8 blogcontent">
+      <i class="fa fa-quote-left fa-3x fa-pull-left fa-border"></i>
+      <p>This is my second time to come to the States. The first time was 3 years ago, when I was coming to University of California, Berkeley, as an exchange freshman. Time flies. I'm excited to study Human-computer Interaction at School of Information in University of Michigan, Ann Arbor. Meeting people from different and diverse backgrounds is such an amazing experience...
+      </p>
+      <button type="button" class="btn-primary readmore">Read more</button>
+    </div>
+    </div>
+    <div class='blogtext2'>
+      <p class="bloghdl col-md-2 col-lg-3">Second Note</p>
+      <div class="col-md-9 col-lg-8 blogcontent">
+      <i class="fa fa-quote-left fa-3x fa-pull-left fa-border"></i>
+      <p class='blogcontent'>I took SI 539 in the first semester, which made me excited because it is my first time to learn a computer language. Altough it really took me a while to get hands on and I felt frustrated when I progressed nothing and others learnt fast, I still gained a great sense of achievement when I put pieces of elements together to build a holistic portfolio of my own...</p>
+      <button type="button" class="btn-primary readmore">Read more</button>
+    </div>
+  </div>
+
+  </div>
+    </div>
+      </div> -->
+
+  <script>
+    // javascript version
+    var images = document.getElementsByClassName("thumbnailimg");
+    for(var i = 0; i < images.length; ++i) {
+      images[i].onmouseover = function() {
+        console.log(this.src);
+        document.getElementById("preview").src = this.src;
+      }
+    }
+    // jQuery version
+    // $(".thumbnailimg").each(function() {
+    //   $(this).mouseover(function() {
+    //     console.log(this);
+    //     $("#preview")[0].src = this.src;
+
+    //   });
+    // });
+  </script>
+
+
+  <div class="container-fluid">
+  <div class="row-fluid" id="contact4">
+    <p id = "content4">
+      <h2>My Contact Information</h2>
+
+      
+      <p>
+        
+
+      I would love to talk you, and there are many ways you can contact me. Blow are the list of options: <br><br>
+      Phone Number: (562)308-8517<br><br>
+      Email Address: fernwang@umich.edu<br><br>
+      Address: As shown in the Google map below<br><br>
+      In the very bottom of the page, you can click on those icons and get directed to my Facebook page, my Linkedin page, and my Mcommunity page. Check them out!
+
+
+      </p>
+
+  </div>
+
+
+<div class='container'>
+  <iframe class='map2' src="https://www.google.com/maps/embed/v1/place?q=place_id:Eik1NDAgVGhvbXBzb24gU3QsIEFubiBBcmJvciwgTUkgNDgxMDQsIFVTQQ&amp;key=AIzaSyB7-pJcphj63qts2HrnzW8gwpxE0c7Hqw8" allowfullscreen></iframe>
+</div>
+    
+{% endblock %}
+
+
+        
+<!-- 
+app = webapp2.WSGIApplication([
+    ('/', MainHandler)
+], debug=True)
+
+ -->
