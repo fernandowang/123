@@ -19,8 +19,13 @@ body {
 
 }
 
+.current {
+	border: solid;
+}
+
 header{
 	background-color: #C5C2BB;
+	opacity: 0.7;
 	border-radius: 20px;
 	margin:0px;
 
@@ -151,6 +156,9 @@ body h3{
  #education{
   margin-top: 2em;
   padding: 1em 0;
+ /* background-image: url("/static/img/edupic.jpg")*/
+ background-color: #e6f7ff;
+ opacity: 0.7;
 }
 
 
@@ -268,8 +276,23 @@ footer{
 	margin-top: 20px;
 	width:550px;
     height: 700px;
-
+    background-color: #EAE0C8;
+    padding: 14px 25px;
+    margin-left: 20%;
+ 
  }
+
+#resumelink {
+	background-color: #EF7A6A;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;	
+    text-decoration: none;
+    display: block;
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 20%;
+}
 
 .preview {
 	display: none;
