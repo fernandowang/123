@@ -235,7 +235,7 @@ footer{
 }
 
 #contact4{
-	background-color: #fff;
+	background-color: #EBE6E6;
 	border: 10px solid #B0C4DE;
 	border-radius: 20px;
 	padding:15px;
@@ -303,29 +303,9 @@ footer{
 }
 
 
+@media(min-width: 520px) {
 
 
-@media(min-width: 768px) {
-#fullview {
-	display: inline;
-}
-#mobileview {
-	display: none;
-}
-.mainbody img {
-	margin: 0 auto;
-}
-.navbar a {
-	margin-left: 12px;
-	margin-right: 12px;
-}
-.navbar ul {
-	display: inline;
-	float: right;
-}
-.navbar li {
-	display: inline-block;
-}
 .preview {
 	display: block;
 }
@@ -394,6 +374,29 @@ footer{
     body {
       padding-top: 15;
     }
+}
+
+@media(min-width: 768px) {
+#fullview {
+	display: inline;
+}
+#mobileview {
+	display: none;
+}
+.mainbody img {
+	margin: 0 auto;
+}
+.navbar a {
+	margin-left: 12px;
+	margin-right: 12px;
+}
+.navbar ul {
+	display: inline;
+	float: right;
+}
+.navbar li {
+	display: inline-block;
+}
 }
 
 /*    .logo{
