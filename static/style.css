@@ -125,15 +125,12 @@ body h3{
 }
 
  #selfie {
-  height: 28em;
-  width: 35em;
-  padding-left: 2em;
-  display: inline-block;
-  padding-right: 2em;
+  width: 100%;
+  height: auto;
+  padding: 0 2em;
+  display: block;
   margin: 0 auto;
   border-radius: 60px;
-
-
 }
 
 .mainbody{
@@ -183,13 +180,10 @@ body h3{
 }
 
 footer{
-  bottom: 0;
   margin: 0 auto;
   margin-top: 5%;
   width:400px;
-  text-align: center;
-/*  position:absolute;
-  bottom:0;*/
+  text-align: center; 
 }
 
 .footerimage{
@@ -232,7 +226,7 @@ footer{
 	border-radius: 20px;
 	padding:15px;
 	margin-top: 10px;
-	text-align: center;
+	text-align: left;
 
 }
 
@@ -264,13 +258,17 @@ footer{
 	float:left;
 }
 
- .map2{
-    width:500px;
-    height: 350px;
-    margin-top: 10px;
-    margin-left: 28%;
-    margin-right: auto;
+.map2{
+  width: 200px;
+  height: 140px;
+  margin-top: 5px;
+}
 
+@media(min-width: 520px) {
+  .map2 {
+    width: 500px;
+    height: 350px;
+  } 
 }
 
  #resume{
@@ -444,6 +442,13 @@ footer{
     width:500px;
     height: 350px;
   }
+/*
+.minheight {
+  min-height: 300px;*/
+}
 
-
-
+.block-center {
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

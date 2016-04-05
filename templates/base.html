@@ -35,7 +35,7 @@
 				<ul>
 					<!-- <p><h1>Fernando Wang | UX Designer</h1></p> -->
 
-					<li>{% if path == "/index.html" %}
+					<li>{% if path == "/index.html" or path == "/" %}
 						<a href = "index.html" class = "current">HOME</a>
 					{% else %}
 						<a href = "index.html">Home</a>
@@ -64,11 +64,13 @@
 
 	</header>
 	
+	<!-- <div class="minheight"> -->
 	{% block content %}
 	
 
 	{% endblock %}
-	
+	<!-- </div> -->
+
     <footer>
 
      <ul class="footerlink">
